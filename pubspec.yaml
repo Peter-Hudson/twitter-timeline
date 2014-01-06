@@ -1,0 +1,5 @@
+name: twittercall
+description: A sample command-line application for getting updates from Twitter from your timeline
+dependencies:  
+  crypto: any
+  utf: any
