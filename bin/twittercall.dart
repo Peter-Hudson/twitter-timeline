@@ -151,7 +151,11 @@ class Callings {
   void _ReadWriteFile(pasd_jsondata){
     File tempFile = new File(data_file);
     tempFile.readAsString(encoding: UTF8).then((filedata){
-      var temp_json = JSON.decode(filedata);
+      var temp_json;
+      if(filedata is! List){
+        filedata = '[{}]'; 
+      }
+      temp_json = JSON.decode(filedata);
       pasd_jsondata.addAll(temp_json);
       _WriteToFile(data_file,pasd_jsondata);
     });
