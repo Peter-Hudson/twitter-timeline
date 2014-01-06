@@ -1,7 +1,7 @@
 Twitter Timeline Example
 ========================
 
-A first attempt (will need some tweaks; as I am still learning) at using Dart on command-line to get your timeline updates from Twitter and save to a JSON file. 
+A first attempt (will need some tweaks; as I am still learning) at using Dart on command-line to get your timeline updates from Twitter (using Twitter API version 1.1) and save to a JSON file. 
 
 ## Setup
 #### Update config.json with:
