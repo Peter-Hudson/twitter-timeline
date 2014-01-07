@@ -62,6 +62,7 @@ class Callings {
                         ]; 
     
     List post_body = [];
+
     _OAuthCall(Uri_Map,post_headers,post_body,'get');    
   }
   
@@ -151,8 +152,8 @@ class Callings {
   void _ReadWriteFile(pasd_jsondata){
     File tempFile = new File(data_file);
     tempFile.readAsString(encoding: UTF8).then((filedata){
-      var temp_json;
-      if(filedata is! List){
+      var temp_json;      
+      if(filedata.length <= 0){
         filedata = '[]'; 
       }
       temp_json = JSON.decode(filedata);
