@@ -153,7 +153,7 @@ class Callings {
     tempFile.readAsString(encoding: UTF8).then((filedata){
       var temp_json;
       if(filedata is! List){
-        filedata = '[{}]'; 
+        filedata = '[]'; 
       }
       temp_json = JSON.decode(filedata);
       pasd_jsondata.addAll(temp_json);
