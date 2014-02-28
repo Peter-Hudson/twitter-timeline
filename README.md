@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/peter-hudson/twitter-timeline.png?label=ready&title=Ready)](https://waffle.io/peter-hudson/twitter-timeline)
 Twitter Timeline Example
 ========================
 
